@@ -2,15 +2,15 @@
 ```shell
 create table tracker
 (
-    start_time      timestamp(6),
-    stop_time       timestamp(6),
     id              uuid not null
         primary key,
+    action          varchar(255),
+    remarks         varchar(255),
+    start_time      timestamp(6),
+    stop_time       timestamp(6),
     tracker_user_id uuid
         constraint fkp79w9ksstw2k2yj1hrq0b358p
-            references ??? (),
-    action          varchar(255),
-    remarks         varchar(255)
+            references tracker_user
 );
 
 alter table tracker

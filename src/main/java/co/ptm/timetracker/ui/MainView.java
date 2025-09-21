@@ -53,11 +53,13 @@ public class MainView extends VerticalLayout {
 
             trackerTrackService.save(tracerRequest);
 
-
+            textFieldAction.clear();
+            textFieldRemarks.clear();
         });
 
         add(header,selectEmail,dateTimePickerStart,dateTimePickerStop,textFieldAction,textFieldRemarks,addTacker);
     }
+
 
 
 }

@@ -51,3 +51,8 @@ dependencyManagement {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+vaadin {
+    productionMode = true
+    optimizeBundle = true
+    pnpmEnable = true
+}
