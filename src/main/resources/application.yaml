@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: time-tracker
+  docker:
+    compose:
+      lifecycle-management: start_only
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+#vaadin:
+#  launch-browser: true
+
+logging:
+  level:
+    co:
+      ptm:
+        timetracker:
+          api:
+            service: DEBUG
+          ui: DEBUG
+server:
+  servlet:
+    context-path: /api/v1
