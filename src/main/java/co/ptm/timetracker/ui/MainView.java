@@ -44,7 +44,7 @@ public class MainView extends VerticalLayout {
         addTacker.addClickListener(e->{
             TracerRequest tracerRequest = TracerRequest.builder()
                     .startTime(dateTimePickerStart.getValue())
-                    .stopTime(dateTimePickerStart.getValue())
+                    .stopTime(dateTimePickerStop.getValue())
                     .zoneId(ZoneId.of("America/Chicago"))
                     .email(selectEmail.getValue())
                     .action(textFieldAction.getValue())
