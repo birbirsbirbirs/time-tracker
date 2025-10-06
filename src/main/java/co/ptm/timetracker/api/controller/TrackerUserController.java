@@ -11,7 +11,7 @@ import java.util.List;
 @Slf4j
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/tracker-user")
+@RequestMapping("/api/tracker-user")
 public class TrackerUserController {
     private final TrackerUserService trackerUserService;
 
